@@ -1,0 +1,3 @@
+H:\CM\CST8288\W08\labs\lab1\Lab01B\ShannonsSample\src\AllTests.java
+H:\CM\CST8288\W08\labs\lab1\Lab01B\ShannonsSample\src\ShannonsTheorem.java
+H:\CM\CST8288\W08\labs\lab1\Lab01B\ShannonsSample\src\Test_ShannonsTheorem.java
