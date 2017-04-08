@@ -2,6 +2,15 @@ package symphony;
 
 public class Soloist {
 
-    public Soloist(){
-    }
+    private ContectInfo contectInfo;
+
+public void Soloist(){
+	
+}
+public void setContectInfo(){
+	
+}
+public void getContectInfo(){
+	
+}
 }
