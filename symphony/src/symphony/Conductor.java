@@ -2,6 +2,19 @@ package symphony;
 
 public class Conductor {
 
-    public Conductor(){
+    private ContectInfo contectInfo;
+
+    public void Conductor(){
+
+    }
+
+    public void SelectComposition(String Concert){
+    }
+
+    public void setContectInfo(){
+
+    }
+    public void getContectInfo(){
+
     }
 }

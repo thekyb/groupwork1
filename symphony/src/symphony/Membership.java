@@ -2,6 +2,23 @@ package symphony;
 
 public class Membership {
 
-    public Membership(){
+    private int ID;
+    private ContectInfo contectInfo;
+
+    public getID(){
+
     }
+
+    public setID(){
+
+    }
+
+    public void setContectInfo(){
+
+    }
+
+    public void getContectInfo(){
+
+    }
+
 }
