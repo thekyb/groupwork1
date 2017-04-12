@@ -3,37 +3,46 @@ package symphony;
 // TODO For doing this, please consider real industrial situation and improve it. Thank you.
 public class Payment {
     private double amountOfPayment;
-    private PayType payType;// TODO generate enum 
+    private static PayType payType; // TODO generate enum
+    private String confirmPayment;
 
-    public void Payment(){
+    public enum PayType {
+    	Visa,
+    	Mastercard,
+    	AmericanExpress, 
+    	Cash, 
+    	Cheque;
+    	
+    	PayType() { }
+    }
+    
+    public Payment() {	}
 
+    public String payByCredit(PayType cardType){
+    	
+    	switch (cardType) {
+	    	case Visa: confirmPayment = "The total amount due was paid by Visa";
+	    	break;
+	    	case Mastercard: confirmPayment = "The total amount due was paid by Mastercard";
+	    	break;
+	    	case AmericanExpress: confirmPayment = "The total amount due was paid by American Express";;
+	    	break;
+	    	default: confirmPayment = "You did not choose a viable credit option";
+	    	break;
+    	}
+    	
+    	return confirmPayment;
     }
 
-    public void payByCredit(){
+    public String payByCash() { return "The total amount due was paid in cash."; }
 
-    }
+    public String payByCheque(){ return "The total amount due was paid by cheque."; }
 
-    public void payByCash(){
+    public double getAmountOfPayment() { return this.amountOfPayment; }
 
-    }
+    public void setAmountOfPayment(double amount) { this.amountOfPayment = amount; }
 
-    public void payByCheck(){
+    public PayType getPaymentType() { return Payment.payType; }
 
-    }
-
-    public void getAmountOfPayment(){
-
-    }
-
-    public void setAmountOfPayment(){
-
-    }
-
-    public void getPaymentType(){
-
-    }
-
-    public void setPaymentType(){
-
-    }
+    public void setPaymentType(PayType payType) { Payment.payType = payType; }
 }
