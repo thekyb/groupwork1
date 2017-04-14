@@ -6,6 +6,8 @@ public class Concert {
     private String mName;
     public boolean isPerformed;
     private boolean enabled;
+    
+    public Concert() {}
 
     public Concert(int id, String name, boolean performed){
         mId = id;

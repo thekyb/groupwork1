@@ -1,6 +1,6 @@
 /*
   File name: Conductor
-  Author: Seokhwan Lee. Stuent # 040842046
+  Author: Seokhwan Lee. Student
   Course: CST8288-OOP
   Project #: Project1
   Date: 12th, April, 2017
