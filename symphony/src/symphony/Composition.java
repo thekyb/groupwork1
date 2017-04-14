@@ -1,62 +1,94 @@
 package symphony;
 
+import java.util.ArrayList;
+
 public class Composition {
-    private Composer composer;
-    private String name;
-    private int id;
-    private ArrayList<Soloist> soloistList;
-    private ArrayList<Movement> movementList;
+    private Composer mComposer;
+    private String mName;
+    private int mId;
+    private ArrayList<Soloist> mSoloistList;
+    private ArrayList<Movement> mMovementList;
 
-    public void Composition(){
-
+    public Composition(){
+        
+    }
+    public Composition(Composer comp, 
+                       String name, 
+                       int id, 
+                       ArrayList<Soloist> soloistList,
+                       ArrayList<Movement> movementList
+                       ){
+        mComposer = comp;
+        mName = name;
+        mId = id;
+        mSoloistList = soloistList;
+        mMovementList = movementList;
     }
 
-    public void getComposer(){
-
+    public Composer getComposer(){
+        return mComposer; 
     }
 
-    public void setComposer(){
-
+    public void setComposer(Composer comp){
+        mComposer = comp;
     }
 
-    public void getName(){
-
+    public String getName(){
+        return mName;
     }
 
-    public void setName(){
-
+    public void setName(String name){
+        mName = name;
     }
 
-    public void getId(){
-
+    public int getId(){
+        return mId;
     }
 
-    public void setId(){
-
+    public void setId(int id){
+    	mId = id;
     }
 
-    public void addSoloist(Int ID){
-
+    public void addSoloist(Soloist soloist){
+        mSoloistList.add(soloist);
     }
 
-    public void getSoloist(Int ID){
-
+    public Soloist getSoloist(int ID){
+        for (Soloist s : mSoloistList)
+        {
+            if (s.getId() == ID)
+                return s;
+        }
+        return null;
     }
 
     public void removeSoloist(Int ID){
-
+        for (int i = 0; i< mSoloistList.length; i++)
+        {
+            if (mSoloistList[i].mId == ID)
+                mSoloistList.remove(i);
+        }
     }
 
-    public void addMovement(Int ID){
-
+    public void addMovement(Movement movement){
+        mSoloistList.add(movement);
     }
 
-    public void getMovement(Int ID){
-
+    public Movement getMovement(Int ID){
+        for (Soloist s : soloistList)
+        {
+            if (s.mId == ID)
+                return s;
+        }
+        return null;
     }
 
     public void removeMovement(Int ID){
-
+        for (int i = 0; i< mMovementList.length; i++)
+        {
+            if (mMovementList[i].mId == ID)
+                mMovementList.remove(i);
+        }
     }
 
 }

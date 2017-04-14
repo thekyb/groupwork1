@@ -1,6 +1,6 @@
 package symphony;
 
-public class Soloist {
+public class Soloist extends Person{
 
     private ContectInfo contectInfo;
 
