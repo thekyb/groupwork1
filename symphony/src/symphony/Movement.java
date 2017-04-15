@@ -1,34 +1,37 @@
 package symphony;
 
 public class Movement {
-    private int id;
-    private String name;
-    private String composerName;
+    private String mName;
+    private String mComposerName;
+	private int mNumber;
 
-    public void Movement(String Composer){
-    }
+	public Movement(int num, String mName, String composer){
+		mNumber = num;
+		
+	}
 
-    public void getID(){
+	public int getmNumber() {
+		return mNumber;
+	}
 
-    }
+	public void setmNumber(int mNumber) {
+		this.mNumber = mNumber;
+	}
 
-    public void setID(){
+	public String getmName() {
+		return mName;
+	}
 
-    }
+	public void setmName(String mName) {
+		this.mName = mName;
+	}
 
-    public void getName(){
+	public String getmComposerName() {
+		return mComposerName;
+	}
 
-    }
+	public void setmComposerName(String mComposerName) {
+		this.mComposerName = mComposerName;
+	}
 
-    public void setName(){
-
-    }
-
-    public void getComposer(){
-
-    }
-
-    public void setComposer(){
-
-    }
 }

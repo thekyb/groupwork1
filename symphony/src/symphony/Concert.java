@@ -2,28 +2,46 @@ package symphony;
 
 public class Concert {
 
-    private int id;
-    private String name;
+    private int mId;
+    private String mName;
     public boolean isPerformed;
+    private boolean enabled;
+    
+    public Concert() {}
 
-    public void getID(){
-
+    public Concert(int id, String name, boolean performed){
+        mId = id;
+        mName = name;
+        isPerformed = performed;
     }
 
-    public void setID(){
+	public int getId() {
+		return mId;
+	}
 
-    }
+	public void setId(int mId) {
+		this.mId = mId;
+	}
 
-    public void getName(){
+	public String getName() {
+		return mName;
+	}
 
-    }
+	public void setName(String name) {
+		this.mName = name;
+	}
 
-    public void setName(){
+	public boolean isPerformed() {
+		return isPerformed;
+	}
 
-    }
+	public void setPerformed(boolean isPerformed) {
+		this.isPerformed = isPerformed;
+	}
 
-    public void perform(){
-
-    }
+	public void enable(boolean flag) {
+		// TODO Auto-generated method stub
+		enabled = flag;
+	}
 
 }

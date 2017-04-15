@@ -1,6 +1,6 @@
 package symphony;
 
-public class PerformedConcert {
+public class PerformedConcert extends ScheduledConcert{
 
     public PerformedConcert(){
     }

@@ -1,13 +1,15 @@
 package symphony;
 
 public class Composer {
-    public void Composer(){
+    public Composer(){
 
     }
 
     public void makeComposition(String Name){
+    
     }
 
-    public void makeMovement(Int ID, String Name){
+    public void makeMovement(int ID, String Name){
+    
     }
 }
